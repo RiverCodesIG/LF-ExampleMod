@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "example",
+  "version": "1.0",
+  "name": "Example Mod",
+  "description": "This is an example description! Tell everyone what your mod is about!",
+  "authors": [
+    "River"
+  ],
+  "contact": {
+    "homepage": "https://legacyfabric.net/",
+    "sources": "https://github.com/Legacy-Fabric/fabric-example-mod"
+  },
+  "icon": "assets/modid/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      {
+        "adapter": "kotlin",
+        "value": "net.fabricmc.example.ExampleModKt"
+      }
+    ]
+  },
+  "mixins": [
+    "example.mixins.json"
+  ],
+  "depends": {
+    "fabric-language-kotlin": ">=1.10.17+kotlin.1.9.22",
+    "fabricloader": ">=0.14.19",
+    "minecraft": "1.8.9"
+  }
+}

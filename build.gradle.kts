@@ -4,9 +4,6 @@ plugins {
 	id("legacy-looming") version "1.5-SNAPSHOT"
 }
 
-// use 8 for higher compatibility
-val jvmVer = 17
-
 version = project.version
 group = project.group
 
@@ -19,10 +16,6 @@ dependencies {
 	modImplementation("net.fabricmc:fabric-language-kotlin:1.10.17+kotlin.1.9.22")
 }
 
-tasks.compileJava {
-	options.release.set(jvmVer)
-}
-
 kotlin {
-	jvmToolchain(jvmVer)
+	jvmToolchain(8)
 }

@@ -7,10 +7,6 @@
   "authors": [
     "River"
   ],
-  "contact": {
-    "homepage": "https://legacyfabric.net/",
-    "sources": "https://github.com/Legacy-Fabric/fabric-example-mod"
-  },
   "icon": "assets/modid/icon.png",
   "environment": "*",
   "entrypoints": {

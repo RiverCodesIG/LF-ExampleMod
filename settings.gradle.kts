@@ -1,4 +1,5 @@
-rootProject.name = "Example"
+val name: String by settings
+rootProject.name = name
 
 pluginManagement {
 	repositories {
